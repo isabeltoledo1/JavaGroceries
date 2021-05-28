@@ -4,7 +4,7 @@ import java.io.*;
 class Groceries{  
   public static void main(String []args){
      //For user input output
-     Scanner scanner = new Scanner(System.in);
+     var scanner = new Scanner(System.in);
      //To store the shopping list
      ArrayList<String>groceries = new ArrayList<>();
      String fileName = "groceries.txt";
@@ -77,6 +77,7 @@ class Groceries{
         }
         //Closes the file
         fileOut.close();
+        scanner.close();
      }
      catch(IOException e){
         //Prints error message
